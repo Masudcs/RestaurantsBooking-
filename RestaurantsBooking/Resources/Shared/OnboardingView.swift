@@ -1,5 +1,5 @@
 //
-//  AttractionView.swift
+//  OnboardingView.swift
 //  RestaurantsBooking
 //
 //  Created by Md. Masud Rana on 3/17/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AttractionView: View {
+struct OnboardingView: View {
     private var imageName: String
     private var title: String
     private var description: String
@@ -43,9 +43,9 @@ struct AttractionView: View {
     }
 }
 
-struct AttractionView_Previews: PreviewProvider {
+struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        AttractionView(
+        OnboardingView(
             imageName: "Tracking_Map",
             title: "Nearby restaurants",
             description: "You don't have to go far to find a good restaurant,we have provided all the restaurants that is near you"

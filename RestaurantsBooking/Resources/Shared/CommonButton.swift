@@ -28,15 +28,22 @@ struct CommonButton: View {
     var body: some View {
         VStack {
             Button {} label: {
-                Text(title)
-                    .font(.system(size: 14, weight: .bold))
-                    .padding(.horizontal, 74)
-                    .padding(.vertical, 16)
-                    .background(backgroundColor)
-                    .cornerRadius(12)
-                    .foregroundColor(foregroundColor)
+                HStack {
+                    Spacer()
+                    
+                    Text(title)
+                        .font(.system(size: 14, weight: .bold))
+                        .foregroundColor(foregroundColor)
+                       
+                    Spacer()
+                }
+                .padding(.horizontal, 45)
+                .padding(.vertical, 16)
+                .background(backgroundColor)
+                .cornerRadius(12)
             }
         }
+        
     }
 }
 
