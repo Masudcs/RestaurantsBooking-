@@ -15,22 +15,17 @@ struct HomeScreen: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    OfferItem(
-                        iconName: "Burger_Icon",
-                        imageName: "Burgers",
-                        offerTitle: "Flash Order",
-                        offerDescription: "We are here with the bestdeserts in town."
-                    )
+                    OfferView()
+                        .padding(.bottom, 30)
                     
                     SeeAllItem(
                         showAll: $showAllNewArivalItem,
                         title: "Today New Arivable",
                         comment: "Best of the today  food list update"
                     )
+                    .padding(.bottom, 16)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
-                        
-                        
                         HStack {
                             ForEach(0..<4) { _ in
                                 NewArivalItemView(
@@ -41,12 +36,14 @@ struct HomeScreen: View {
                             }
                         }
                     }
+                    .padding(.bottom, 30)
                     
                     SeeAllItem(
                         showAll: $showBookingRestaruant,
                         title: "Booking Restaurant",
                         comment: "Check your city Near by Restaurant"
                     )
+                    .padding(.bottom, 16)
                     
                     ForEach(0..<4) { _ in
                         BookingRestaurantItem(
@@ -58,9 +55,9 @@ struct HomeScreen: View {
                     
                 }
                 .padding(.horizontal, 15)
-                .background(Color.systemGroupedBackground)
                 .searchable(text: $searchText, prompt: "Search")
             }
+            .background(Color.systemGroupedBackground)
         }
     }
 }
