@@ -1,5 +1,5 @@
 //
-//  OfferView.swift
+//  OfferItem.swift
 //  RestaurantsBooking
 //
 //  Created by Md. Masud Rana on 3/23/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OfferView: View {
+struct OfferItem: View {
     private var backgroundColor: Color = .systemYellow
     private var iconName: String
     private var imageName: String
@@ -83,17 +83,17 @@ struct OfferView: View {
     }
 }
 
-struct OfferView_Previews: PreviewProvider {
+struct OfferItem_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            OfferView(
+            OfferItem(
                 iconName: "Burger_Icon",
                 imageName: "Burgers",
                 offerTitle: "Flash Order",
                 offerDescription: "We are here with the bestdeserts in town."
             )
             
-            OfferView(
+            OfferItem(
                 backgroundColor: Color.systemGreen,
                 iconName: "Pizza_Icon",
                 imageName: "Pizza",

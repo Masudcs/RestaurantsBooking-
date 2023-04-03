@@ -11,7 +11,7 @@
 		0A0BF29D29C8C6DA00E5EF51 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0BF29C29C8C6DA00E5EF51 /* CreateAccountView.swift */; };
 		0A0BF29F29C8C6E800E5EF51 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0BF29E29C8C6E800E5EF51 /* LoginView.swift */; };
 		0A15EA0D29D82CB70011F8F4 /* NewArivalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15EA0C29D82CB70011F8F4 /* NewArivalItemView.swift */; };
-		0A28663929CBFD1F0041B8BD /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28663829CBFD1F0041B8BD /* OfferView.swift */; };
+		0A28663929CBFD1F0041B8BD /* OfferItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28663829CBFD1F0041B8BD /* OfferItem.swift */; };
 		0A28AD1029CB7581005A666F /* EmailSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28AD0F29CB7581005A666F /* EmailSuccessView.swift */; };
 		0A28AD1229CB75A2005A666F /* ChangePasswordSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28AD1129CB75A2005A666F /* ChangePasswordSuccessView.swift */; };
 		0A2DDB5C29C384A000AB02D9 /* RestaurantsBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2DDB5B29C384A000AB02D9 /* RestaurantsBookingApp.swift */; };
@@ -30,6 +30,9 @@
 		0AD0B1AB29C95A1C000B2C66 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0B1AA29C95A1C000B2C66 /* ForgetPasswordView.swift */; };
 		0AD0B1AD29C95A32000B2C66 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0B1AC29C95A32000B2C66 /* ChangePasswordView.swift */; };
 		0AD0B1AF29C95DAF000B2C66 /* CommonSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0B1AE29C95DAF000B2C66 /* CommonSuccessView.swift */; };
+		0AE5B36D29D9DE8100965899 /* BookingRestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B36C29D9DE8100965899 /* BookingRestaurantItem.swift */; };
+		0AE5B36F29D9E5C600965899 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B36E29D9E5C600965899 /* HomeScreen.swift */; };
+		0AE5B37129D9E7AB00965899 /* SeeAllItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5B37029D9E7AB00965899 /* SeeAllItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +40,7 @@
 		0A0BF29C29C8C6DA00E5EF51 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		0A0BF29E29C8C6E800E5EF51 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0A15EA0C29D82CB70011F8F4 /* NewArivalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArivalItemView.swift; sourceTree = "<group>"; };
-		0A28663829CBFD1F0041B8BD /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
+		0A28663829CBFD1F0041B8BD /* OfferItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferItem.swift; sourceTree = "<group>"; };
 		0A28AD0F29CB7581005A666F /* EmailSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSuccessView.swift; sourceTree = "<group>"; };
 		0A28AD1129CB75A2005A666F /* ChangePasswordSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSuccessView.swift; sourceTree = "<group>"; };
 		0A2DDB5829C384A000AB02D9 /* RestaurantsBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantsBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +60,9 @@
 		0AD0B1AA29C95A1C000B2C66 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 		0AD0B1AC29C95A32000B2C66 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		0AD0B1AE29C95DAF000B2C66 /* CommonSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSuccessView.swift; sourceTree = "<group>"; };
+		0AE5B36C29D9DE8100965899 /* BookingRestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRestaurantItem.swift; sourceTree = "<group>"; };
+		0AE5B36E29D9E5C600965899 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		0AE5B37029D9E7AB00965899 /* SeeAllItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				0A28663729CBFB970041B8BD /* Components */,
+				0AE5B36E29D9E5C600965899 /* HomeScreen.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -81,8 +88,9 @@
 		0A28663729CBFB970041B8BD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0A28663829CBFD1F0041B8BD /* OfferView.swift */,
+				0A28663829CBFD1F0041B8BD /* OfferItem.swift */,
 				0A15EA0C29D82CB70011F8F4 /* NewArivalItemView.swift */,
+				0AE5B37029D9E7AB00965899 /* SeeAllItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 		0A69C47429C60FD400ED6916 /* Booking */ = {
 			isa = PBXGroup;
 			children = (
+				0AE5B36B29D9DE6000965899 /* Components */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -234,6 +243,14 @@
 			children = (
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		0AE5B36B29D9DE6000965899 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5B36C29D9DE8100965899 /* BookingRestaurantItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +331,7 @@
 				0A2DDB5E29C384A000AB02D9 /* ContentView.swift in Sources */,
 				0A69C47B29C610BD00ED6916 /* FoodView.swift in Sources */,
 				0A69C46E29C601C000ED6916 /* CommonTextField.swift in Sources */,
+				0AE5B37129D9E7AB00965899 /* SeeAllItem.swift in Sources */,
 				0A2DDB7529C391A600AB02D9 /* Color.swift in Sources */,
 				0A0BF29D29C8C6DA00E5EF51 /* CreateAccountView.swift in Sources */,
 				0AD0B1AD29C95A32000B2C66 /* ChangePasswordView.swift in Sources */,
@@ -325,8 +343,10 @@
 				0A2DDB5C29C384A000AB02D9 /* RestaurantsBookingApp.swift in Sources */,
 				0A2DDB7929C3965F00AB02D9 /* CommonButton.swift in Sources */,
 				0A2DDB7729C394AA00AB02D9 /* OnboardingView.swift in Sources */,
+				0AE5B36D29D9DE8100965899 /* BookingRestaurantItem.swift in Sources */,
+				0AE5B36F29D9E5C600965899 /* HomeScreen.swift in Sources */,
 				0A69C47029C6077600ED6916 /* CommonButtonWithIcon.swift in Sources */,
-				0A28663929CBFD1F0041B8BD /* OfferView.swift in Sources */,
+				0A28663929CBFD1F0041B8BD /* OfferItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
