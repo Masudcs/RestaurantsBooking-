@@ -27,6 +27,7 @@
 		0A69C47729C6102D00ED6916 /* NearbyRestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69C47629C6102D00ED6916 /* NearbyRestaurantsView.swift */; };
 		0A69C47929C6106A00ED6916 /* FavoritesMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69C47829C6106A00ED6916 /* FavoritesMenuView.swift */; };
 		0A69C47B29C610BD00ED6916 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69C47A29C610BD00ED6916 /* FoodView.swift */; };
+		0A9AC3D129DDD91F0082F068 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AC3D029DDD91F0082F068 /* OnboardingScreen.swift */; };
 		0AD0B1AB29C95A1C000B2C66 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0B1AA29C95A1C000B2C66 /* ForgetPasswordView.swift */; };
 		0AD0B1AD29C95A32000B2C66 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0B1AC29C95A32000B2C66 /* ChangePasswordView.swift */; };
 		0AD0B1AF29C95DAF000B2C66 /* CommonSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0B1AE29C95DAF000B2C66 /* CommonSuccessView.swift */; };
@@ -58,6 +59,7 @@
 		0A69C47629C6102D00ED6916 /* NearbyRestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsView.swift; sourceTree = "<group>"; };
 		0A69C47829C6106A00ED6916 /* FavoritesMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesMenuView.swift; sourceTree = "<group>"; };
 		0A69C47A29C610BD00ED6916 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		0A9AC3D029DDD91F0082F068 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		0AD0B1AA29C95A1C000B2C66 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 		0AD0B1AC29C95A32000B2C66 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		0AD0B1AE29C95DAF000B2C66 /* CommonSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSuccessView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				0A69C47629C6102D00ED6916 /* NearbyRestaurantsView.swift */,
 				0A69C47829C6106A00ED6916 /* FavoritesMenuView.swift */,
 				0A69C47A29C610BD00ED6916 /* FoodView.swift */,
+				0A9AC3D029DDD91F0082F068 /* OnboardingScreen.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				0A2DDB7929C3965F00AB02D9 /* CommonButton.swift in Sources */,
 				0A2DDB7729C394AA00AB02D9 /* OnboardingView.swift in Sources */,
 				0AE5B36D29D9DE8100965899 /* BookingRestaurantItem.swift in Sources */,
+				0A9AC3D129DDD91F0082F068 /* OnboardingScreen.swift in Sources */,
 				0AE5B36F29D9E5C600965899 /* HomeScreen.swift in Sources */,
 				0A69C47029C6077600ED6916 /* CommonButtonWithIcon.swift in Sources */,
 				0A28663929CBFD1F0041B8BD /* OfferItem.swift in Sources */,

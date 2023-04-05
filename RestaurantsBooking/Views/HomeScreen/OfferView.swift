@@ -19,6 +19,7 @@ struct OfferView: View {
                     offerTitle: "Flash Order",
                     offerDescription: "We are here with the bestdeserts in town."
                 )
+                .tag(0)
                 OfferItem(
                     backgroundColor: Color.systemGreen,
                     iconName: "Pizza_Icon",
@@ -26,6 +27,7 @@ struct OfferView: View {
                     offerTitle: "New Arrival",
                     offerDescription: "We are here with the bestdeserts in town."
                 )
+                .tag(1)
                 OfferItem(
                     backgroundColor: Color.systemGreen,
                     iconName: "Pizza_Icon",
@@ -33,20 +35,21 @@ struct OfferView: View {
                     offerTitle: "New Arrival",
                     offerDescription: "We are here with the bestdeserts in town."
                 )
+                .tag(2)
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
             HStack {
                 Circle()
-                    .fill(.green)
+                    .fill(tabIndex == 0 ? Color.systemGreen : Color.systemWhite)
                     .frame(width: 8, height: 8)
                 
                 Circle()
-                    .fill(.green)
+                    .fill(tabIndex == 1 ? Color.systemGreen : Color.systemWhite)
                     .frame(width: 8, height: 8)
                 
                 Circle()
-                    .fill(.green)
+                    .fill(tabIndex == 2 ? Color.systemGreen : Color.systemWhite)
                     .frame(width: 8, height: 8)
             }
             
