@@ -32,6 +32,8 @@ struct OnboardingScreen: View {
                         tabIndex = 3
                     } label: {
                         Text("Skip")
+                            .font(.system(size: 16, weight: .regular))
+                            .foregroundColor(Color.secondaryLabel)
                     }
                     
                     Spacer()
@@ -55,7 +57,9 @@ struct OnboardingScreen: View {
                     Button {
                         tabIndex += 1
                     } label: {
-                        Label("", systemImage: "arrow.forward")
+                        Image(systemName: "arrow.forward")
+                            .foregroundColor(Color.systemGreen)
+                            .font(.system(size: 16, weight: .regular))
                     }
                 }
                 .padding(.bottom, 44)
