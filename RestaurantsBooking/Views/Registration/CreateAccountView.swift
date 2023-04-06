@@ -39,6 +39,7 @@ struct CreateAccountView: View {
             
             VStack(spacing: 16) {
                 CommonButton(title: "Registration")
+                    .padding(.horizontal, 20)
                 
                 CommonButtonWithIcon(title: "Sign up with Google", backgroundColor: Color.systemGroupedBackground, foregroundColor: Color.label)
             }

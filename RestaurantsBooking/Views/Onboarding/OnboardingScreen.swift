@@ -29,7 +29,7 @@ struct OnboardingScreen: View {
                 
                 HStack(spacing: 0) {
                     Button {
-                        tabIndex = 2
+                        tabIndex = 3
                     } label: {
                         Text("Skip")
                     }
