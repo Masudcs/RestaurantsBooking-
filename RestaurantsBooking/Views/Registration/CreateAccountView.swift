@@ -11,6 +11,7 @@ struct CreateAccountView: View {
     @State private var fullName: String = ""
     @State private var emailAddress: String = ""
     @State private var password: String = ""
+    @State private var showRegistration: Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -38,7 +39,7 @@ struct CreateAccountView: View {
         }
             
             VStack(spacing: 16) {
-                CommonButton(title: "Registration")
+                CommonButton(showSheet: $showRegistration, title: "Registration")
                     .padding(.horizontal, 20)
                 
                 CommonButtonWithIcon(title: "Sign up with Google", backgroundColor: Color.systemGroupedBackground, foregroundColor: Color.label)

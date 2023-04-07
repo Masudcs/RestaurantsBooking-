@@ -10,45 +10,44 @@ import SwiftUI
 struct LoginView: View {
     @State private var emailAddress: String = ""
     @State private var password: String = ""
+    @State private var showRegistration: Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
-        VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Email address")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Color.secondaryLabel)
             
-            Text("Email address")
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(Color.secondaryLabel)
+                CommonTextField(textField: $emailAddress, placeholder: "Enter email address")
+                    .padding(.bottom, 10)
             
-            CommonTextField(textField: $emailAddress, placeholder: "Enter email address")
-                .padding(.bottom, 10)
+                Text("Password")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Color.secondaryLabel)
             
-            Text("Password")
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(Color.secondaryLabel)
+                CommonTextField(textField: $password, placeholder: "Enter password")
             
-            CommonTextField(textField: $password, placeholder: "Enter password")
-            
-            HStack(spacing : 0) {
-                Spacer()
+                HStack(spacing: 0) {
+                    Spacer()
                 
-                Button {
-                    
-                } label: {
-                    Text("Forget Password?")
+                    Button {} label: {
+                        Text("Forget Password?")
+                    }
                 }
-
+                .padding(.bottom, 30)
+                .padding(.trailing, 10)
             }
-            .padding(.bottom, 30)
-            .padding(.trailing, 10)
-        }
             
             VStack(spacing: 16) {
-                CommonButton(title: "Registration", backgroundColor:  Color.systemGroupedBackground, foregroundColor: Color.label)
+                CommonButton(showSheet: $showRegistration,
+                             title: "Registration",
+                             backgroundColor: Color.systemGroupedBackground,
+                             foregroundColor: Color.label)
                 
                 CommonButtonWithIcon(title: "Sign up with Google", backgroundColor: Color.systemGroupedBackground, foregroundColor: Color.label)
             }
             .padding(.horizontal, 40)
-            
         }
         .padding(.horizontal, 16)
         .accentColor(Color.systemGreen)

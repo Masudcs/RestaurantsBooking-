@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct EmailSuccessView: View {
+    @State private var showBackEmail: Bool = false
     var body: some View {
         VStack(spacing: 0) {
             Spacer()
@@ -32,7 +33,7 @@ struct EmailSuccessView: View {
 
             }
             
-            CommonButton(title: "Back Email")
+            CommonButton(showSheet: $showBackEmail, title: "Back Email")
                 .padding(EdgeInsets(
                     top: 140, leading: 60, bottom: 70, trailing: 60))
         }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ForgetPasswordView: View {
     @State private var emailAddress: String = ""
+    @State private var showSuccessView: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -45,7 +46,7 @@ struct ForgetPasswordView: View {
             
             Spacer()
             
-           CommonButton(title: "Submit")
+            CommonButton(showSheet: $showSuccessView, title: "Submit")
                 .padding(.horizontal, 25)
                 .padding(.bottom, 30)
 

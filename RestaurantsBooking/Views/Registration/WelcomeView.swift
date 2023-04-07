@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @State private var showCreateAccount: Bool = false
+    @State private var showLogin: Bool = false
+    
     var body: some View {
         VStack(spacing: 16) {
             OnboardingView(
@@ -17,10 +20,11 @@ struct WelcomeView: View {
             )
             .padding(.bottom, 80)
             
-            CommonButton(title: "Create Account")
+            CommonButton(showSheet: $showCreateAccount, title: "Create Account")
                 .padding(.horizontal, 10)
             
             CommonButton(
+                showSheet: $showLogin,
                 title: "Login",
                 backgroundColor: Color.systemGreen.opacity(0.25),
                 foregroundColor: Color.systemGreen
@@ -33,6 +37,9 @@ struct WelcomeView: View {
         }
         .padding(.horizontal, 16)
         .accentColor(Color.systemGreen)
+        .sheet(isPresented: $showCreateAccount) {
+            CreateAccountView()
+        }
     }
 }
 

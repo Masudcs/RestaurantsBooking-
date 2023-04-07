@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ChangePasswordSuccessView: View {
+    @State private var showSignin: Bool = false
+    
     var body: some View {
         VStack(spacing: 0) {
             Spacer()
             
             CommonSuccessView()
             
-            CommonButton(title: "Sign in")
+            CommonButton(showSheet: $showSignin, title: "Sign in")
                 .padding(EdgeInsets(
                     top: 200, leading: 60, bottom: 70, trailing: 60))
         }

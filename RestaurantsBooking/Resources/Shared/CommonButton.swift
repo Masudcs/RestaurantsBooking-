@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct CommonButton: View {
+    @Binding var showSheet: Bool
+    
     private var title: String
     private var backgroundColor: Color = .systemGreen
     private var foregroundColor: Color = .systemWhite
     var onClickAction: (() -> Void)?
 
     init(
+        showSheet: Binding<Bool>,
         title: String,
         backgroundColor: Color = Color.systemGreen,
         foregroundColor: Color = Color.systemWhite,
         onClickAction: (() -> Void)? = nil
     ) {
+        self._showSheet = showSheet
         self.title = title
         self.backgroundColor = backgroundColor
         self.foregroundColor = foregroundColor
@@ -27,7 +31,9 @@ struct CommonButton: View {
 
     var body: some View {
         VStack {
-            Button {} label: {
+            Button {
+                showSheet = true
+            } label: {
                 HStack {
                     Spacer()
                     
@@ -49,6 +55,6 @@ struct CommonButton: View {
 
 struct CommonButton_Previews: PreviewProvider {
     static var previews: some View {
-        CommonButton(title: "Create Account")
+        CommonButton(showSheet: .constant(true), title: "Create Account")
     }
 }

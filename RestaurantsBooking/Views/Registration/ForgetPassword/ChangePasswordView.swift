@@ -10,6 +10,7 @@ import SwiftUI
 struct ChangePasswordView: View {
     @State private var newPassword: String = ""
     @State private var confarmPassword: String = ""
+    @State private var showSuccess: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -44,7 +45,7 @@ struct ChangePasswordView: View {
             
             Spacer()
             
-            CommonButton(title: "Submit")
+            CommonButton(showSheet: $showSuccess, title: "Submit")
                 .padding(.horizontal, 25)
                 .padding(.bottom, 30)
         }
