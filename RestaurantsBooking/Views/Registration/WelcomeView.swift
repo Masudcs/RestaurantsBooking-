@@ -38,8 +38,12 @@ struct WelcomeView: View {
         .padding(.horizontal, 16)
         .accentColor(Color.systemGreen)
         .sheet(isPresented: $showCreateAccount) {
-            CreateAccountView()
+            AccountScreen(showCreateAccountView: $showCreateAccount, showLoginView: $showLogin)
         }
+        .sheet(isPresented: $showLogin) {
+            AccountScreen(showCreateAccountView: $showCreateAccount, showLoginView: $showLogin)
+        }
+        
     }
 }
 

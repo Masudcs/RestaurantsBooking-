@@ -34,7 +34,7 @@ struct ChangePasswordView: View {
                 CommonTextField(textField: $newPassword, placeholder: "Enter new password")
                     .padding(.bottom, 16)
                 
-                Text("Confarm Password")
+                Text("Confirm Password")
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundColor(Color.label)
                     .padding(.bottom, 6)

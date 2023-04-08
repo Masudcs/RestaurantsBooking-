@@ -18,21 +18,21 @@ struct CreateAccountView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Full Name")
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(Color.secondaryLabel)
+                .foregroundColor(Color.label)
             
             CommonTextField(textField: $fullName)
                 .padding(.bottom, 10)
             
             Text("Email address")
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(Color.secondaryLabel)
+                .foregroundColor(Color.label)
             
             CommonTextField(textField: $emailAddress, placeholder: "Enter email address")
                 .padding(.bottom, 10)
             
             Text("Password")
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(Color.secondaryLabel)
+                .foregroundColor(Color.label)
             
             CommonTextField(textField: $password, placeholder: "Enter password")
                 .padding(.bottom, 34)

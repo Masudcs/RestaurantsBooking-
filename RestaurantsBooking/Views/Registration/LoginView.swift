@@ -41,9 +41,10 @@ struct LoginView: View {
             
             VStack(spacing: 16) {
                 CommonButton(showSheet: $showRegistration,
-                             title: "Registration",
+                             title: "Login",
                              backgroundColor: Color.systemGroupedBackground,
                              foregroundColor: Color.label)
+                    .padding(.horizontal, 20)
                 
                 CommonButtonWithIcon(title: "Sign up with Google", backgroundColor: Color.systemGroupedBackground, foregroundColor: Color.label)
             }
