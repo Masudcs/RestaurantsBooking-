@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct OnboardingScreen: View {
+    @AppStorage("showWelcomeview") var showWelcomeView: Bool = false
     @State var tabIndex = 0
     
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                
                 TabView(selection: $tabIndex) {
                     NearbyRestaurantsView()
                         .tag(0)
@@ -33,6 +33,7 @@ struct OnboardingScreen: View {
                     HStack(spacing: 0) {
                         Button {
                             tabIndex = 3
+                            showWelcomeView = true
                         } label: {
                             Text("Skip")
                                 .font(.system(size: 16, weight: .regular))
@@ -59,6 +60,10 @@ struct OnboardingScreen: View {
                         
                         Button {
                             tabIndex += 1
+                            if tabIndex > 2 {
+                                showWelcomeView = true
+                            }
+                            
                         } label: {
                             Image(systemName: "arrow.forward")
                                 .foregroundColor(Color.systemGreen)
@@ -70,6 +75,11 @@ struct OnboardingScreen: View {
                 }
             }
             .background(Color.systemGroupedBackground)
+            .onAppear {
+                if showWelcomeView {
+                    tabIndex = 3
+                }
+            }
         }
     }
 }

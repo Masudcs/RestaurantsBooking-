@@ -13,6 +13,13 @@ struct WelcomeView: View {
     
     var body: some View {
         VStack(spacing: 16) {
+            NavigationLink("", isActive: showCreateAccount ? $showCreateAccount : $showLogin) {
+                if showCreateAccount {
+                    CreateAccountView()
+                } else {
+                    LoginView()
+                }
+            }
             OnboardingView(
                 imageName: "Order_Success",
                 title: "Welcome",
@@ -37,12 +44,12 @@ struct WelcomeView: View {
         }
         .padding(.horizontal, 16)
         .accentColor(Color.systemGreen)
-        .sheet(isPresented: $showCreateAccount) {
-            AccountScreen(showCreateAccountView: $showCreateAccount, showLoginView: $showLogin)
-        }
-        .sheet(isPresented: $showLogin) {
-            AccountScreen(showCreateAccountView: $showCreateAccount, showLoginView: $showLogin)
-        }
+//        .sheet(isPresented: $showCreateAccount) {
+//            AccountScreen(showCreateAccountView: $showCreateAccount, showLoginView: $showLogin)
+//        }
+//        .sheet(isPresented: $showLogin) {
+//            AccountScreen(showCreateAccountView: $showCreateAccount, showLoginView: $showLogin)
+//        }
         
     }
 }
