@@ -37,6 +37,11 @@ struct EmailSuccessView: View {
                 .padding(EdgeInsets(
                     top: 140, leading: 60, bottom: 70, trailing: 60))
         }
+        .sheet(isPresented: $showBackEmail) {
+                   MailComposeViewController(toRecipients: ["masud.pust16@gmail.com"], mailBody: "Here is mail body") {
+                       // Did finish action
+                   }
+               }
         .accentColor(Color.systemGreen)
     }
 }
