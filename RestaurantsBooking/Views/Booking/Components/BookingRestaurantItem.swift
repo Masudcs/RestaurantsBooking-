@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct BookingRestaurantItem: View {
+    private var buttonName: String
     private var imageName: String
     private var restaurantName: String
     private var restaurantLocation: String
     
     init(
+        buttonName: String = "Book",
         imageName: String,
         restaurantName: String,
         restaurantLocation: String
     ) {
+        self.buttonName = buttonName
         self.imageName = imageName
         self.restaurantName = restaurantName
         self.restaurantLocation = restaurantLocation
@@ -48,20 +51,17 @@ struct BookingRestaurantItem: View {
                     Spacer()
                     
                     Button {
-                        
+                        //
                     } label: {
-                        Text("Book")
+                        Text(buttonName)
                             .font(.system(size: 12, weight: .semibold))
                             .foregroundColor(Color.systemWhite)
                             .padding(.horizontal, 30)
                             .padding(.vertical, 6)
                             .background(Color.systemGreen)
                             .cornerRadius(6)
-                        
                     }
                     .padding(.leading, 6)
-
-
                 }
             }
         }
